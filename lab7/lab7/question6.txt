@@ -1,0 +1,11 @@
+var count=(function(){
+    let counter=10;
+    function getcount()
+    {return counter;}
+    return {
+       add: function(){ counter++;},
+       reset:function(){counter=0;},
+      
+       getcount1:getcount
+    }
+    })();
